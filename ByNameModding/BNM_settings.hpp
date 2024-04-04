@@ -31,7 +31,7 @@ static_assert(false, "ByNameModding requre C++20 and upper!");
 //! Allow use GetOffset
 //! GetOffset can only be used in very special cases, it should not be used on a permanent basis
 //! Wrong usage can increase the risk of errors
-// #define BNM_ALLOW_GET_OFFSET
+#define BNM_ALLOW_GET_OFFSET
 
 //! Allow use of code to synchronize threads
 //! Recommended disable for internal use
