@@ -16,7 +16,7 @@ CallJNI_OnLoad_t RealJNIOnLoad = 0;
 
 JNIEXPORT jint JNICALL CallJNIOL(JavaVM *vm, void *reserved) {
 // LOGI("OnLoad called");
-std::thread(hook_thread).detach();
+// std::thread(hook_thread).detach();
 if (!pLibRealUnity)
 pLibRealUnity = dlopen("librealmain.so", RTLD_NOW);
 if (!pLibRealUnity)
