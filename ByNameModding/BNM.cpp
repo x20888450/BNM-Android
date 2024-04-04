@@ -1079,7 +1079,7 @@ namespace BNM {
         auto fileCopy = (char *) malloc(file.size() + 1);
         memcpy(fileCopy, file.data(), file.size());
         fileCopy[file.size()] = 0;
-        auto handle = BNM_dlopen(fileCopy, RTLD_LAZY);
+        auto handle = BNM_dlopen(fileCopy, RTLD_NOW);
         if (!BNM_Internal::InitLibraryHandle(handle, fileCopy)) {
             BNM_LOG_ERR_IF(isLibrariesExtracted, "Failed to load libil2cpp.so by path!");
             free(fileCopy);
@@ -1092,7 +1092,7 @@ namespace BNM {
         fileCopy = (char *) malloc(file.size() + 1);
         memcpy(fileCopy, file.data(), file.size());
         fileCopy[file.size()] = 0;
-        handle = BNM_dlopen(fileCopy, RTLD_LAZY);
+        handle = BNM_dlopen(fileCopy, RTLD_NOW);
         if (!BNM_Internal::InitLibraryHandle(handle, fileCopy)) {
             BNM_LOG_ERR("Failed to load libil2cpp.so by path!");
             free(fileCopy);
