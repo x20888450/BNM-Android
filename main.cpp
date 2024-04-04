@@ -27,7 +27,9 @@ return RealJNIOnLoad(vm, reserved);
 }
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-BNM::TryForceLoadIl2CppByPath(vm,reserved);
+JNIEnv *env;
+vm->GetEnv((void **) &env, JNI_VERSION_1_6);
+BNM::TryForceLoadIl2CppByPath(env);
 // LOGI("Initialize JNI");
 return CallJNIOL(vm, reserved);
 }
