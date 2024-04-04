@@ -6,7 +6,7 @@ static_assert(false, "ByNameModding requre C++20 and upper!");
 /********** USER AREA **************/
 
 //#define UNITY_VER 171 // 2017.1.x
-//#define UNITY_VER 172 // From 2017.2.x to 2017.4.x
+#define UNITY_VER 172 // From 2017.2.x to 2017.4.x
 //#define UNITY_VER 181 // 2018.1.x
 //#define UNITY_VER 182 // 2018.2.x
 //#define UNITY_VER 183 // From 2018.3.x to 2018.4.x
@@ -14,7 +14,7 @@ static_assert(false, "ByNameModding requre C++20 and upper!");
 //#define UNITY_VER 193 // 2019.3.x
 //#define UNITY_VER 194 // 2019.4.x
 //#define UNITY_VER 201 // 2020.1.x
-#define UNITY_VER 202 // From 2020.2.x to 2020.3.19 (They are probably same because BNM don't use things like Il2CppCodeGen)
+// #define UNITY_VER 202 // From 2020.2.x to 2020.3.19 (They are probably same because BNM don't use things like Il2CppCodeGen)
 //#define UNITY_VER 203 // From 2020.3.20 to 2020.3.xx
 //#define UNITY_VER 211 // 2021.1.x (You need set UNITY_PATCH_VER to 24 if build 24 and upper)
 //#define UNITY_VER 212 // 2021.2.x
